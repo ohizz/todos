@@ -1,0 +1,198 @@
+*,*::before,*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+  background-color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrapper {
+  padding: 2rem 0;
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+.wrapper h1 {
+  font-weight: bolder;
+  font-size: 2rem;
+  text-align: left;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input{
+  font-weight: 200;
+  font-size: 1.3rem;
+  color: #454545;
+  outline: none;
+  margin-top: 1rem;
+  border-radius: .1rem;
+  border: 1px solid #111;
+  height: 50px;
+  width: 100%;
+  padding: 0 .9rem;
+}
+
+form button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin-top: 1rem;
+  height: 50px;
+  background: #fff;
+  border: 1px solid #111;
+  font-size: 1rem;
+  padding: 0 1.2rem;
+  margin-left: .1rem;
+}
+
+
+input:hover, input:focus {
+  padding: 0 1rem;
+  border: 1px solid #333;
+}
+
+
+form button:focus,  form button:hover {
+  border: 1px solid #333;
+ }
+
+.lists {
+  color: #111;
+  margin-top: 2rem;
+  border-left: 1px solid #999;
+}
+.list:first-child {
+  border-top: none;
+}
+
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:.6rem 0 .6rem .3rem;
+  border-top: 1px solid #999;
+}
+
+.list div {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  width: 100%;
+}
+
+.list div input {
+  width: 10%;
+}
+
+.list div label {
+ width: 70%;
+}
+
+label {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 .6rem  0 0;
+}
+
+label span {
+  font-weight: 200;
+  color: #454545;
+  letter-spacing: -1px;
+}
+
+svg {
+  cursor: pointer;
+}
+
+
+button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  /* margin: 0 1.5rem 0 0; */
+}
+
+.lastBtn {
+  margin-left: 2rem;
+}
+
+input[type=checkbox]{
+  display: none;
+}
+
+
+input + label:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f0c8";
+  /* font-weight: 900; */
+  margin-right: .6rem;
+}
+
+input:checked + label:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f14a";
+  /* font-weight: 900; */
+}
+
+.clearAll {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
+}
+
+ .clearAll button {
+   background-color: #fff;
+   color: #111;
+   border-radius: .2rem;
+   cursor: pointer;
+   height: 35px;
+   padding: 0 .5rem;
+   border: 2px solid black;
+}
+
+footer {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+footer p {
+  padding: 0;
+  margin: 0;
+  color: #454545;
+  font-weight: 200;
+  font-size: .9rem;
+  letter-spacing: -1px;
+}
+
+footer svg {
+  margin: 0 .2rem;
+  cursor: default;
+}
+
+.ohis {
+  padding-left: .2rem;
+}
+
+footer p .ohis {  
+  color: #111;
+  font-weight: 600;
+  text-decoration: underline;
+}
